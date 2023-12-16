@@ -11,7 +11,7 @@ if (isset($_POST['login'])) {
     }elseif($password == ""){
       echo"<script>alert('jangan konsongkan password silahkan login ulang'); document.location = 'login.php';</script>";
     }else {
-      $login = mysqli_query($konek, "SELECT * FROM admin where username='$username' AND password='$password'");
+      $login = mysqli_query($dbconn, "SELECT * FROM admin where username='$username' AND password='$password'");
       if (mysqli_num_rows($login)) {
           
           $_SESSION['admin'] = mysqli_fetch_array($login);
