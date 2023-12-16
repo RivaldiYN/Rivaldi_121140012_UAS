@@ -1,6 +1,6 @@
 <!-- Berfungsi sebagai koneksi file admin dengan index -->
 <?php
-include 'konek.php';
+include 'dbconn.php';
 if (!isset($_SESSION['admin'])) {
   header('location:index.php');
 }

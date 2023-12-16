@@ -1,5 +1,5 @@
 <?php
 session_start();
-$konek = mysqli_connect("localhost","root","","uas");
+$dbconn = mysqli_connect("localhost","root","","uas");
 ?>
 <!-- Penghubungan dengan database -->

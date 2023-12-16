@@ -1,5 +1,5 @@
 <?php
-include "konek.php";
+include "dbconn.php";
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = sha1($_POST['password']);

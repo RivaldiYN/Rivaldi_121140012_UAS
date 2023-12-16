@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     if($fakultas == "" || $program_studi == "" || $jenjang_studi == "" || $akreditasi == "") {
         echo"<script>alert('Harap lengkapi semua kolom yang ada silahkan isi ulang inputan');</script>";
     }else{
-        mysqli_query($konek," INSERT INTO akreditasi (fakultas, program_studi, jenjang_studi, akreditasi) VALUES ('$fakultas', '$program_studi', '$jenjang_studi', '$akreditasi')");
+        mysqli_query($dbconn," INSERT INTO akreditasi (fakultas, program_studi, jenjang_studi, akreditasi) VALUES ('$fakultas', '$program_studi', '$jenjang_studi', '$akreditasi')");
         echo"<script>alert('tambah data berhasil'); document.location = '?page=tabel';</script>";
     }
 }

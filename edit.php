@@ -1,7 +1,7 @@
 <!-- Berfungsi sebagai alur dari fitur delete/hapus data -->
 <?php
 $id = $_GET['id'];
-$akreditasi = mysqli_query($konek," SELECT * FROM akreditasi WHERE id = '$id'");
+$akreditasi = mysqli_query($dbconn," SELECT * FROM akreditasi WHERE id = '$id'");
 $data = mysqli_fetch_array($akreditasi);
 if (isset($_POST['program_studi'])) {
     echo $_POST['program_studi'];
@@ -10,7 +10,7 @@ if (isset($_POST['program_studi'])) {
     $jenjang_studi= $_POST['jenjang_studi'];
     $akreditasi= $_POST['akreditasi'];
 
-    $tambah = mysqli_query($konek," UPDATE akreditasi set fakultas='$fakultas', program_studi='$program_studi', jenjang_studi='$jenjang_studi', akreditasi='$akreditasi'");
+    $tambah = mysqli_query($dbconn," UPDATE akreditasi set fakultas='$fakultas', program_studi='$program_studi', jenjang_studi='$jenjang_studi', akreditasi='$akreditasi'");
     echo"<script>alert('tambah data berhasil'); document.location = '?page=tabel';</script>";
 }
 ?>

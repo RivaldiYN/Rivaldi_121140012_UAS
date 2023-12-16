@@ -12,7 +12,7 @@
                     <th>Action</th>
                 </tr>
                 <?php
-                $daftar_tanggapan = mysqli_query($konek,"SELECT * FROM akreditasi ORDER BY id ASC");
+                $daftar_tanggapan = mysqli_query($dbconn,"SELECT * FROM akreditasi ORDER BY id ASC");
                 while ($data = mysqli_fetch_array($daftar_tanggapan)) {         
                 ?>
                 <tr>

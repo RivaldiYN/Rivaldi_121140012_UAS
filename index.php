@@ -1,6 +1,6 @@
 <!-- File ini berfungsi sebagai akses awal dari website -->
 <?php
-include 'konek.php';
+include 'dbconn.php';
 if (isset($_SESSION['admin'])) {
   header('location:admin.php');
 }
