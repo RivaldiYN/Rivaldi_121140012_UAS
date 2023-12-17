@@ -12,8 +12,10 @@
 6. Program dapat dijalankan.
 
 Link Website
+<br>
 https://rivaldi-121140012.000webhostapp.com/
 (hanya dapat diakses pada mode incognito dikarenakan menggunakan hostingan gratis)
-Login Admin
-Username: admin1
+<br>
+Login Admin <br>
+Username: admin1 <br>
 Password: admin1
