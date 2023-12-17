@@ -10,3 +10,10 @@
 4. Import database yang tersedia ke database yang sudah dibuat.
 5. Ubah pada isi file dbconn.php menjadi "$dbconn = mysqli_connect("localhost","root","","isi_nama_database");".
 6. Program dapat dijalankan.
+
+Link Website
+https://rivaldi-121140012.000webhostapp.com/
+(hanya dapat diakses pada mode incognito dikarenakan menggunakan hostingan gratis)
+Login Admin
+Username: admin1
+Password: admin1
