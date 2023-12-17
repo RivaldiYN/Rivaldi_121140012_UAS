@@ -25,7 +25,7 @@ if (isset($_POST['login'])) {
     $username= $_POST['username'];
     $password= sha1($_POST['password']);
 
-    $admin = mysqli_query($konek,"SELECT * FROM admin");
+    $admin = mysqli_query($dbconn,"SELECT * FROM admin");
     $data = mysqli_fetch_array($admin);
 
 
@@ -33,7 +33,7 @@ if (isset($_POST['login'])) {
         echo"<script>alert('jangan konsongkan form input silahkan login ulang');</script>";
     }else{
         if ($username != $data['username']) {
-        mysqli_query($konek, "INSERT INTO admin(nama, username, password) VALUES ('$nama','$username','$password')");
+        mysqli_query($dbconn, "INSERT INTO admin(nama, username, password) VALUES ('$nama','$username','$password')");
         echo"<script>alert('Registrasi Akun Berhasil'); document.location = 'login.php';</script>";
         
         }else {
